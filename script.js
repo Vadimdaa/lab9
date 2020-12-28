@@ -10,3 +10,15 @@ map.set(201, "gr");
 console.log(`Список свойств: ${(map.get("Иван"))}, ${(map.get("Иванов"))}, ${(map.get(201))}`);
 let obj = Object.entries(map.entries());
 console.log(`Студент ${student.first_name} ${student.last_name} учится в ${student.group} группе`);
+function arrayCut(Array){
+    let len = Array.length;
+    for (let i=0; i<len; i++){
+        if (Array.length>1){
+        console.log(`${Array.pop()} осталось [${Array}]`);
+    }
+        else{
+            console.log(Array[0]);
+    }
+}
+}
+arrayCut([1, 2, 3])
