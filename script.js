@@ -35,14 +35,14 @@ function isPalindrome(pal){
 isPalindrome("доход");
 isPalindrome("хлеб");
 
-function scalarMultiplication(n, Array){
-    let len = Array.length;
-    let zero = Array[0].length;
-    for (let i = 0; i < len; i++){
-        for (let j = 0; j < zero; j++){
-            Array[i][j]*=n;
-        }
-    }
-    console.log(Array);
+function scalarMultiplication(n, matr){
+    let Array=''
+    matr.forEach(value => {
+        value.forEach(i => {
+            Array += i * n + ' '
+        })
+        Array += '\n'
+    }) 
+    console.log(Array)
 }
 scalarMultiplication(3, [[1, 2, 3],[4, 5, 6],[7, 8, 9]]);
